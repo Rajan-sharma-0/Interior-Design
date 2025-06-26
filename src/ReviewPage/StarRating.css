@@ -1,0 +1,54 @@
+/* Container for the star rating */
+.star-rating {
+  font-size: 40px; /* Set the base size for the stars */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: row; /* Arrange stars horizontally in a row */
+  justify-content: center; /* Center align the stars horizontally */
+  margin-top: 10px; /* Add space between the image and the star rating */
+}
+
+/* Style for the star rating buttons */
+.star-rating button {
+  font-size: 30px; /* Set the size of the button (star) */
+  background: none; /* Remove default button background */
+  border: none; /* Remove default button border */
+  cursor: pointer; /* Change cursor to pointer for interactive buttons */
+  padding: 0; /* Remove padding around the button */
+  outline: none; /* Remove outline when the button is clicked */
+}
+
+/* Style for stars that are "on" or selected */
+.star-rating .on .star {
+  color: gold; /* Set the color of active stars to gold */
+}
+
+/* Hover effect for stars that are "on" */
+.star-rating .on .star:hover {
+  color: gold; /* Keep the color gold on hover for active stars */
+}
+
+/* Style for stars that are "off" or unselected */
+.star-rating .off .star {
+  color: black; /* Set the color of inactive stars to black */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .star-rating {
+    font-size: 30px; /* Reduce the base size for smaller screens */
+  }
+
+  .star-rating button {
+    font-size: 25px; /* Adjust button size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .star-rating {
+    font-size: 25px; /* Further reduce the base size for very small screens */
+  }
+
+  .star-rating button {
+    font-size: 20px; /* Adjust button size for very small screens */
+  }
+}

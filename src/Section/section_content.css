@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.divcards {
+  display: flex;
+
+  justify-content: start;
+ 
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto; /* Allow height to adjust automatically */
+  width: 90%; /* Set width for large screens */
+
+  max-width: fit-content;
+  margin: 12px;
+}
+
+.card img {
+  width: 100%;
+  height: 379px;
+}
+
+.card-contents {
+  padding: 20px;
+  width: 100%;
+}
+
+.card-title {
+  font-size: 24px;
+  color: #333;
+  margin: 0 0 10px;
+}
+
+.card-description {
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 20px;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #e0f7e9;
+  color: #34a853;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.launch-button {
+  display: inline-block;
+  background-color: #1a73e8;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.credits {
+  font-size: 12px;
+  color: #999;
+  margin-top: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 800px) {
+  .card {
+    width:50%; /* Adjust width for medium screens */
+  }
+  .card img {
+    width: 100%;
+    height: 200px; /* Adjust height for medium screens */
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+
+  .card-description {
+    font-size: 12px;
+  }
+
+  .badge {
+    font-size: 11px;
+  }
+
+  .launch-button {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+
+  .credits {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 200px; /* Use more width on smaller screens */
+   margin: 5px 10px;
+    
+    
+  }
+
+  .card img {
+    width: 100%;
+    
+    height: 200px; /* Adjust height for medium screens */
+  }
+  
+  .card-title {
+    font-size: 18px;
+  }
+
+  .card-description {
+    font-size: 11px;
+  }
+
+  .badge {
+    font-size: 10px;
+  }
+
+  .launch-button {
+    font-size: 11px;
+    padding: 6px 12px;
+  }
+
+  .credits {
+    font-size: 9px;
+  }
+}

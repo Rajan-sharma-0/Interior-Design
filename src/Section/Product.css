@@ -1,0 +1,68 @@
+/* Base styles - already defined above */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#product .divcards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 100px;
+  margin-bottom: 80px;
+}
+
+#product .card_content_p {
+  background-color: #f9f9f9;
+  border: 1px solid black;
+  border-radius: 18px;
+  
+  padding: 20px;
+  margin: 10px;
+  flex: 1 1 calc(30% - 20px);
+  transition: transform 0.3s;
+}
+
+#product .card:hover {
+  transform: scale(1.05);
+}
+
+#product .card {
+  width: 410px;
+  height: 500px;
+  margin-bottom: 40px;
+}
+
+/* Media queries for responsiveness */
+
+/* Large screens (desktops, 1200px and above) */
+@media (min-width: 1200px) {
+  #product .card_content_p {
+    
+      flex: 1 1 calc(25% - 20px); /* 4 cards per row */
+  }
+}
+
+/* Medium screens (tablets, 768px to 1199px) */
+@media (max-width: 1199px) and (min-width: 768px) {
+  #product .card_content_p {
+      flex: 1 1 calc(33.33% - 20px); /* 3 cards per row */
+  }
+}
+
+/* Small screens (mobile devices, 480px to 767px) */
+@media (max-width: 767px) and (min-width: 480px) {
+  #product .card_content_p {
+      flex: 1 1 calc(50% - 20px); /* 2 cards per row */
+  }
+}
+
+/* Extra small screens (small mobile devices, below 480px) */
+@media (max-width: 479px) {
+  #product .card_content_p {
+      flex: 1 1 calc(100% - 20px); /* 1 card per row */
+  }
+}

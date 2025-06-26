@@ -1,0 +1,77 @@
+/* Main wrapper styling */
+/* .wrapper{
+  
+    height: 100vh;
+    width: 110vw;
+} */
+
+.main-credit{
+    display: flex;
+    height: 950px;
+}
+
+/* Styling for the main container of the card */
+.card-credits-main{
+    display: flex; /* Flexbox layout */
+    justify-content: space-evenly; /* Space between items evenly */
+    flex-direction: row; /* Arrange items in a row */
+}
+
+/* Styling for the card container */
+.card-credits{
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Stack items vertically inside the card */
+    width: 400px; /* Set a fixed width for the card */
+}
+
+/* Transition effect for the card on hover */
+.card-credits {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scale and shadow */
+}
+
+/* Hover effect for the card */
+.card-credits:hover {
+    transform: scale(1.10); /* Slightly increase the card size by 10% */
+    box-shadow: 5 20px 20px rgba(10, 10, 10, 0.2); /* Add a shadow effect on hover */
+}
+
+/* Styling for the top section of the card */
+.card-credits-1{
+    display: flex; /* Flexbox layout */
+    background: linear-gradient(90deg, hsla(252, 65%, 50%, 1) 0%, hsla(216, 77%, 58%, 1) 100%); /* Gradient background */
+    background-color: #e1f5fe; /* Fallback background color */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center content vertically */
+}
+
+/* Styling for the card title */
+.p1-credits{
+    text-transform: uppercase; /* Make the text uppercase */
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center the title horizontally */
+    margin-top: 5px; /* Top margin */
+    color: white; /* White text color */
+}
+
+/* Styling for the pricing section */
+.pricing1{
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center the price horizontally */
+    margin-top: 15px; /* Margin at the top */
+    margin-bottom: 19px; /* Margin at the bottom */
+}
+
+/* Styling for the image inside the top section */
+.card-credits-1 img{
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+}
+
+/* Styling for the bottom section of the card */
+.card-credits-2{
+    background: linear-gradient(50deg, hsla(216, 77%, 58%, 1) 100%, hsla(252, 65%, 50%, 1) 0%); /* Gradient background */
+    display: flex; /* Flexbox layout */
+    background-color: #f0f4f8; /* Fallback background color */
+    flex-direction: column; /* Stack items vertically */
+}

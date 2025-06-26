@@ -1,0 +1,143 @@
+.Main {
+  display: flex; /* Flexbox layout for the container */
+  justify-content: flex-start; /* Align items horizontally to the start (left) */
+  align-items: flex-start; /* Align items vertically to the start (top) */
+  padding-top: 36px; /* Add 36px padding at the top */
+}
+
+
+.card_for_user {
+  position: relative; /* Allow absolute positioning of inner elements */
+  background-repeat: no-repeat; /* Prevent repeating background image */
+  background-size: cover; /* Ensure the background image covers the entire area */
+  background-position: top center; /* Position background image at the top and center */
+  overflow: hidden; /* Hide content that overflows the container */
+  height: 300px; /* Set the card height */
+  width: 353px; /* Set the card width */
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  background-color: white; /* White background for the card */
+  padding: 25px; /* Add padding inside the card */
+  border-radius: 25px; /* Rounded corners with a 25px radius */
+  margin: 10px; /* Uniform margin for better spacing */
+  border: 1px solid #f0f4f8; /* Add a light border around the card */
+  transition: transform 0.2s ease; /* Smooth transition for scaling and shadow effects */
+}
+
+.img {
+  display: flex; /* Flexbox layout for the image */
+  height: 30px; /* Set the image height */
+  width: 30px; /* Set the image width */
+  border-radius: 50%; /* Make the image circular */
+  margin: 14px 2px 8px 8px; /* Adjust margins for positioning */
+}
+
+.star {
+  margin-top: -30px; /* Negative top margin to adjust the star's position */
+  align-items: flex-start; /* Align items at the start (left) */
+  justify-content: flex-start; /* Align content at the start (left) */
+}
+
+.div-for-img-and-heading {
+  display: flex; /* Flexbox layout to align image and heading */
+  justify-content: flex-start; /* Align items horizontally at the start (left) */
+  align-items: flex-start; /* Align items vertically at the start (top) */
+}
+
+.p2 {
+  display: inline-block; /* Align text in a block format with other elements */
+  color: black; /* Set text color to black */
+  text-align: center; /* Center-align the text */
+  max-width: fit-content; /* Ensure the width fits the content */
+  font-size: 13px; /* Set font size to 13px */
+  font-weight: 400; /* Set font weight to normal */
+}
+
+.p1 {
+  font-size: 24px; /* Set the font size for the main heading */
+  font-weight: bold; /* Make the font bold */
+  margin: 10px 0 2px 10px; /* Add top, bottom, and left margin */
+  display: flex; /* Flexbox layout for the text */
+  justify-content: flex-start; /* Align text at the start (left) */
+  align-items: flex-start; /* Align text vertically at the start (top) */
+  color: black; /* Set the font color to black */
+  flex-direction: column; /* Arrange items in a column */
+}
+
+/* Responsive styling */
+@media screen and (max-width: 1024px) {
+  .Main {
+    flex-wrap: wrap; /* Allow wrapping for cards on smaller screens */
+    justify-content: center; /* Center the content */
+  }
+
+  .card_for_user {
+    width: 250px; /* Adjust card width for tablets */
+    height: 350px; /* Adjust card height for tablets */
+    margin: 10px 10px; /* Add spacing between cards */
+
+  }
+
+  .p1 {
+    font-size: 15px; /* Adjust heading font size */
+  }
+.img{
+  font-size: 12px;
+}
+.star{
+  font-size: 12px;
+}
+  .p2 {
+    font-size: 12px; /* Adjust subtext font size */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Main {
+    padding-top: 20px; /* Reduce top padding */
+  }
+
+  .card_for_user {
+    width: 230px; /* Full width for each card */
+    margin: 10px 7px; /* Reduce horizontal margin */
+  }
+  .p1 {
+    font-size: 15px; /* Adjust heading font size */
+  }
+.img{
+  font-size: 12px;
+}
+.p2{
+  font-size: 12px;
+}
+.star{
+  font-size: 12px;
+}
+}
+
+@media screen and (max-width: 480px) {
+  .Main {
+
+  width: 100%;
+    
+  }
+
+  .card_for_user {
+    width: 350px; /* Cards take full width */
+    padding: 20px; /* Adjust padding inside cards */
+    border-radius: 15px; /* Reduce border radius */
+    height: 350px;
+  }
+
+  .p1 {
+    font-size: 15px; /* Adjust heading font size */
+  }
+.img{
+  font-size: 12px;
+}
+.star{
+  font-size: 12px;
+}
+  .p2 {
+    font-size: 10px; /* Adjust subtext font size */
+  }
+}

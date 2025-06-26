@@ -1,0 +1,100 @@
+/* Footer */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+section {
+    padding-bottom: 25px;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#footer {
+    background: #313131 !important;
+    width: 100%;
+   padding-top: 1px;
+}
+.container{
+  padding: 20px;
+}
+#footer h5{
+  padding-left: 10px;
+    
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ffffff;
+    font-weight: 900;
+    text-decoration: underline;
+}
+#footer ul.social li a i {
+    margin-right: 5px;
+  font-size:25px;
+}
+#footer ul.social li:hover a i {
+  font-size:30px;
+  margin-top:-10px;
+  color:#f1c40f;
+}
+#footer ul.social li a,
+#footer ul.quick-links li a{
+  color:#ffffff;
+}
+#footer ul.social li a:hover{
+  color:#f1c40f;
+}
+.row text-green ml-2{
+  color: #0af564;
+}
+.container p{
+  color: #ffffff;
+}
+.footer-bottom {
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #444;
+  margin-top: 20px;
+   color:#f1c40f;;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.footer-bottom-left {
+  text-align: left;
+}
+
+.footer-bottom-left a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+
+.term{
+  padding-left: 15px;
+  color: #eeeeee;}
+
+  .term:hover{
+    color: #f1c40f;
+  }
+  .policy{
+    padding-left: 15px;
+    color: #eeeeee;
+  }
+  
+@media (max-width:767px){
+  #footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+}
+
+.policy:hover {
+  color: #f1c40f;
+ 
+}
+

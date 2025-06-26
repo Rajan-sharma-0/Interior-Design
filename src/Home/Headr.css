@@ -1,0 +1,152 @@
+.header-container {
+ 
+  background-image: url('../../public/image/bg1.webp');
+
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.intro {
+  width: 100%;
+ background: rgba(0, 0, 0, 0.2);
+
+  padding: 2rem;
+  height: 100vh;
+  z-index: 1;
+  margin-top: 4rem;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #ffd700;
+}
+
+.intro p {
+  margin: 0;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.intro h1 {
+  font-size: 2.5rem;
+  margin: 20px 0;
+}
+
+.intro h1 span {
+  color: #ffd700;
+}
+
+.details {
+  margin: 20px 0;
+  font-size: 1.1rem;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.header-btn {
+  background-color: #ffd700;
+  /* color: #333; */
+  color: white;
+  padding: 0.75rem 2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header-btn:hover {
+  background-color: #ffa500;
+  color: #fff;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1024px) {
+  .intro h1 {
+    font-size: 2rem;
+  }
+  .intro p {
+    font-size: 1rem;
+  }
+  .details {
+    font-size: 1.2rem;
+  }
+  .button-group {
+    gap: 20px;
+  }
+  .header-btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro {
+    margin-top: 3rem;
+    padding: 1rem;
+  }
+  .intro h1 {
+    font-size: 1.75rem;
+  }
+  .tagline {
+    font-size: 1.25rem;
+  }
+  .header-btn {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.85rem;
+  }
+  .details {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro {
+    margin-top: 2rem;
+    padding: 0.5rem;
+  }
+  .intro h1 {
+    font-size: 1.5rem;
+  }
+  .tagline {
+    font-size: 1rem;
+  }
+  .header-btn {
+    padding: 0.4rem 1rem;
+    font-size: 0.75rem;
+  }
+  .details {
+    font-size: 0.85rem;
+  }
+}
+
+/* Typewriter and blink animation */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: black; }
+}
+
+.typewriter {
+  font-family: monospace;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 5s steps(50, end) infinite, blink 1s step-end infinite;
+}

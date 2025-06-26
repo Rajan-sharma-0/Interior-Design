@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0px;
+    padding: 0px;
+    
+    background-color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.bgBlur{
+    --webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+  }
+  
+  .transitions{
+    transition: all 0.2s linear;
+  }
+  
+  .hide-scroll-bar {
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    }
+  .hide-scroll-bar::-webkit-scrollbar {
+      display: none;
+    }
+  
+  .absolute-center{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+  
+  .resp-text{
+      font-size: clamp(0.3rem, 0.5rem + 2vw, 2rem);
+    }
+    
+  .resp-head{
+      font-size: clamp(1rem, 0.7rem + 3vw, 5rem);
+    }
+  
+  .s-card{
+    position: relative;
+  }
+  
+  .s-card img{
+    width: 80%;
+    transition: 0.2s linear;
+  }
+  
+  .s-card .content{
+    transform: translateY(65px);
+    transition: 0.3s ease;
+  } 
+
+   .scrollbar-custom {
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #c0c5ca #f0f0f0; /* Thumb and track colors for Firefox */
+  }
+
+  .scrollbar-custom::-webkit-scrollbar {
+    width: 8px; /* Adjust width of scrollbar */
+    height: 8px; /* Adjust height of scrollbar */
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-thumb {
+    background-color: #4a90e2; /* Slider color */
+    border-radius: 4px; /* Rounded corners */
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-thumb:hover {
+    background-color: #357ab8; /* Color when hovered */
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-track {
+    background-color: #f0f0f0; /* Track color */
+  }
