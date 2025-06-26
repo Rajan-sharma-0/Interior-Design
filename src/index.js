@@ -64,7 +64,7 @@ const router = createBrowserRouter(
   )
 );
           
-const CLIENT_ID = "323355556511-vco697l0vcm2u61lv2higvr544rpn436.apps.googleusercontent.com"              // Google OAuth client ID
+            // Google OAuth client ID
 
 
 

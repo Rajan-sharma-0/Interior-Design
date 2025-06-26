@@ -51,13 +51,13 @@ const Room3 = () => {
 
     try {
       const response = await fetch(
-        "http://35.224.147.113:8000/wallpaper/apply_wallpaper",
+        // `put your url in this place`,
         {
           method: "POST",
           headers: { Accept: "application/json" },
           body: formData,
         }
-      );
+      );fff
 
       if (!response.ok) {
         console.error(`Failed to upload images: ${response.status} ${response.statusText}`);

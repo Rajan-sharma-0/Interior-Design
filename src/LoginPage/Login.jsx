@@ -176,7 +176,7 @@ const Login = () => {
     onSuccess: async (codeResponse) => {  // Success callback
       try {
         // Exchange authorization code for tokens
-        const tokenResponse = await fetch('https://oauth2.googleapis.com/token', {  // Token exchange endpoint (sand the client ID and secret)
+        const tokenResponse = await fetch('process.env.REACT_APP_GOOGLE_OAUTH2_TOKEN_URL', {  // Token exchange endpoint (sand the client ID and secret)
           method: 'POST',
           headers: {
             'Content-Type': 'application/x-www-form-urlencoded',   // Set the content type (URL encoded form data)

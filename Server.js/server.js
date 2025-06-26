@@ -4,8 +4,8 @@ const { OAuth2Client } = require("google-auth-library");
 const app = express();
 const PORT = 3001;
 
-const CLIENT_ID = "845060410255-uuop9v9kcatph0unh33mmjret1b1gf1q.apps.googleusercontent.com"; // Replace with your Google Client ID
-const CLIENT_SECRET = "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"; // Replace with your Google Client Secret
+const CLIENT_ID = "process.env.REACT_APP_GOOGLE_OAUTH2_CLIENT_ID"; // Replace with your Google Client ID
+const CLIENT_SECRET = "process.env.REACT_APP_GOOGLE_OAUTH2_CLIENT_SECRET"; // Replace with your Google Client Secret
 
 app.use(express.json());
 
