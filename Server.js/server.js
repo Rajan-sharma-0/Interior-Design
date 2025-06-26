@@ -1,11 +1,11 @@
-const express = require("express");
-const axios = require("axios");
-const { OAuth2Client } = require("google-auth-library");
+import express, { json } from "express";
+import axios from "axios";
+import { OAuth2Client } from "google-auth-library";
 const app = express();
 const PORT = 3001;
 
 
-app.use(express.json());
+app.use(json());
 
 // Handle Google login callback
 app.post("/google-login", async (req, res) => {
@@ -14,9 +14,9 @@ app.post("/google-login", async (req, res) => {
   try {
     // Verify the token
     const client = new OAuth2Client(process.env.REACT_APP_GOOGLE_OAUTH2_CLIENT_ID);
-    const ticket = await client.verifyIdToken({
+    const ticket = client.verifyIdToken({
       idToken: token,
-      audience: CLIENT_ID, // Specify the CLIENT_ID to ensure the token is meant for your app
+      audience: client, // Specify the CLIENT_ID to ensure the token is meant for your app
     });
 
     const payload = ticket.getPayload();
