@@ -57,7 +57,7 @@ const Room3 = () => {
           headers: { Accept: "application/json" },
           body: formData,
         }
-      );fff
+      );
 
       if (!response.ok) {
         console.error(`Failed to upload images: ${response.status} ${response.statusText}`);

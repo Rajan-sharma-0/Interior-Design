@@ -80,7 +80,7 @@ root.render(
 
 
   <React.StrictMode>
-    <GoogleOAuthProvider clientId={CLIENT_ID}>
+    <GoogleOAuthProvider>
     <RouterProvider router={router} />
     </GoogleOAuthProvider>
   </React.StrictMode>
