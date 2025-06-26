@@ -50,7 +50,7 @@ const Header = () => {
       <Section4/>
       {/* <Credits /> */}
       {/* <Meetourteam/> */}
-      <Section5/>
+      {/* <Section5/> */}
       <Review/>
       <About />
       <Footer/>
