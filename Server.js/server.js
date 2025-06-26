@@ -4,8 +4,6 @@ const { OAuth2Client } = require("google-auth-library");
 const app = express();
 const PORT = 3001;
 
-const CLIENT_ID = "process.env.REACT_APP_GOOGLE_OAUTH2_CLIENT_ID"; // Replace with your Google Client ID
-const CLIENT_SECRET = "process.env.REACT_APP_GOOGLE_OAUTH2_CLIENT_SECRET"; // Replace with your Google Client Secret
 
 app.use(express.json());
 
@@ -15,7 +13,7 @@ app.post("/google-login", async (req, res) => {
 
   try {
     // Verify the token
-    const client = new OAuth2Client(CLIENT_ID);
+    const client = new OAuth2Client(process.env.REACT_APP_GOOGLE_OAUTH2_CLIENT_ID);
     const ticket = await client.verifyIdToken({
       idToken: token,
       audience: CLIENT_ID, // Specify the CLIENT_ID to ensure the token is meant for your app
